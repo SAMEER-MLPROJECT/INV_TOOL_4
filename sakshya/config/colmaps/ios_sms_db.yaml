@@ -1,0 +1,21 @@
+source: ios_sms_db
+label: iOS Messages database (sms.db)
+observes_as: sms
+family: mobile
+dependence: device
+clock_domain: export
+reference: false
+sigma_s: 5
+binary: true
+kind: sms
+time_unit: apple_ns
+outgoing_values: ["1"]
+query: "SELECT m.ROWID AS rowid, h.id AS handle, m.date AS date, m.is_from_me AS is_from_me, m.text AS text, m.service AS service FROM message m LEFT JOIN handle h ON m.handle_id = h.ROWID ORDER BY m.date"
+fields:
+  rowid: rowid
+  time: date
+  party: handle
+  direction: is_from_me
+  text: text
+  status: service
+columns: {}

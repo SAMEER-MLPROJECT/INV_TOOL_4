@@ -1,0 +1,22 @@
+source: android_sms_db
+label: Android SMS database (mmssms.db)
+observes_as: sms
+family: mobile
+dependence: device
+clock_domain: export
+reference: false
+sigma_s: 5
+binary: true
+kind: sms
+carve_free_pages: true
+time_unit: unix_ms
+outgoing_values: ["2", "4", "5", "6"]
+query: "SELECT _id AS rowid, address, date, type, body, thread_id FROM sms ORDER BY date"
+fields:
+  rowid: rowid
+  time: date
+  party: address
+  direction: type
+  text: body
+  thread: thread_id
+columns: {}

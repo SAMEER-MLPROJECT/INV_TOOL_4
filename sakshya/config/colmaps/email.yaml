@@ -1,0 +1,7 @@
+source: email
+label: Email message
+family: email
+dependence: mail_message
+reference: false
+sigma_s: 120
+columns: {}

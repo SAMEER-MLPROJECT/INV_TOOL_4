@@ -1,0 +1,7 @@
+source: cloud_location
+label: Cloud location history
+family: cloud
+dependence: cloud_account
+reference: false
+sigma_s: 30
+columns: {}

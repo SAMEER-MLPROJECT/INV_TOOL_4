@@ -1,0 +1,7 @@
+source: device_info
+label: Device extraction report (JSON)
+family: mobile
+dependence: device
+reference: false
+sigma_s: 60
+columns: {}

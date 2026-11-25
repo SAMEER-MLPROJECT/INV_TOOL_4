@@ -1,0 +1,9 @@
+source: instagram
+label: Instagram data download (messages JSON)
+observes_as: chat
+family: social
+dependence: device
+clock_domain: export
+reference: false
+sigma_s: 5
+columns: {}

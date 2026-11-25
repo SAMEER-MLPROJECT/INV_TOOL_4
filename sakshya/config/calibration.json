@@ -1,0 +1,53 @@
+{
+  "engine": "1.0.0",
+  "fitted_on": "18 synthetic training cases (seeds 500 to 517)",
+  "report": {
+    "co_presence": {
+      "brier": 0.0015,
+      "brier_unscaled": 0.0024,
+      "intercept": null,
+      "links": 10170,
+      "log_loss": 0.0127,
+      "log_loss_unscaled": 0.0235,
+      "positives": 62,
+      "prior": "per-link prior odds",
+      "provenance": "18 synthetic training cases (seeds 500 to 517)",
+      "scale": 0.655,
+      "status": "fitted",
+      "type": "co_presence"
+    },
+    "same_actor": {
+      "brier": 0.0001,
+      "brier_unscaled": 0.0478,
+      "intercept": -4.742,
+      "links": 127,
+      "log_loss": 0.0028,
+      "log_loss_unscaled": 0.1903,
+      "positives": 88,
+      "prior": "intercept fitted from the candidate base rate",
+      "provenance": "18 synthetic training cases (seeds 500 to 517)",
+      "scale": 2.0,
+      "status": "fitted",
+      "type": "same_actor"
+    },
+    "same_event": {
+      "brier": 0.0016,
+      "brier_unscaled": 0.0758,
+      "intercept": -5.001,
+      "links": 881,
+      "log_loss": 0.0093,
+      "log_loss_unscaled": 0.2533,
+      "positives": 879,
+      "prior": "intercept fitted from the candidate base rate",
+      "provenance": "18 synthetic training cases (seeds 500 to 517)",
+      "scale": 2.0,
+      "status": "fitted",
+      "type": "same_event"
+    }
+  },
+  "scales": {
+    "co_presence": 0.655,
+    "same_actor": 2.0,
+    "same_event": 2.0
+  }
+}

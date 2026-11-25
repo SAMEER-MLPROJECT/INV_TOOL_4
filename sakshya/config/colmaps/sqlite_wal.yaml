@@ -1,0 +1,8 @@
+source: sqlite_wal
+label: SQLite write-ahead log (listed with its database)
+family: mobile
+dependence: device
+reference: false
+sigma_s: 60
+binary: true
+columns: {}

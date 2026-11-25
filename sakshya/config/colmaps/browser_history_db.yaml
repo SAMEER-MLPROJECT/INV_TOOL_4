@@ -1,0 +1,17 @@
+source: browser_history_db
+label: Chromium browser history (History)
+family: mobile
+dependence: device
+clock_domain: export
+reference: false
+sigma_s: 5
+binary: true
+kind: web_visit
+time_unit: chrome_us
+query: "SELECT v.id AS rowid, u.url AS url, u.title AS title, v.visit_time AS visit_time FROM visits v JOIN urls u ON v.url = u.id ORDER BY v.visit_time"
+fields:
+  rowid: rowid
+  time: visit_time
+  url: url
+  title: title
+columns: {}

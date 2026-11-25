@@ -1,0 +1,13 @@
+source: plist
+label: Property list (iOS or macOS)
+family: mobile
+dependence: device
+clock_domain: export
+reference: false
+sigma_s: 5
+binary: true
+kind: record
+time_unit: apple_s
+records: ""
+fields: {}
+columns: {}

@@ -1,0 +1,29 @@
+services:
+  - type: web
+    name: sakshya
+    runtime: docker
+    plan: starter
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /api/health/ready
+    autoDeploy: false
+    disk:
+      name: sakshya-data
+      mountPath: /data
+      sizeGB: 10
+    envVars:
+      - key: SAKSHYA_ENV
+        value: production
+      - key: SAKSHYA_DATA_DIR
+        value: /data
+      - key: SAKSHYA_COOKIE_SECURE
+        value: "true"
+      - key: SAKSHYA_TRUSTED_PROXIES
+        value: 10.0.0.0/8,172.16.0.0/12,192.168.0.0/16,100.64.0.0/10
+      - key: SAKSHYA_BOOTSTRAP_TOKEN
+        generateValue: true
+      - key: SAKSHYA_API_DOCS
+        value: "false"
+      - key: SAKSHYA_WORKERS
+        value: "1"
+      - key: SAKSHYA_MAX_UPLOAD_MB
+        value: "25"

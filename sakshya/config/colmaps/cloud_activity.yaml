@@ -1,0 +1,21 @@
+source: cloud_activity
+label: Cloud account sign-in activity (JSON)
+observes_as: cloud_location
+family: cloud
+dependence: cloud_account
+reference: false
+sigma_s: 5
+kind: cloud_login
+time_unit: text
+time_format: "%Y-%m-%dT%H:%M:%S%z"
+records: events
+account_path: account
+fields:
+  time: time
+  ip: ip_address
+  device_id: device.id
+  lat: location.lat
+  lon: location.lon
+  accuracy: location.accuracy_m
+  status: result
+columns: {}

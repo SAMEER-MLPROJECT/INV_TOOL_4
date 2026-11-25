@@ -1,0 +1,67 @@
+{
+  "fitted_on": "18 synthetic training cases (seeds 500 to 517)",
+  "transitions": {
+    "sextortion:layering": {
+      "median_min": 77.2,
+      "n": 6,
+      "sigma": 0.3
+    },
+    "sextortion:payment": {
+      "median_min": 85.67,
+      "n": 6,
+      "sigma": 0.356
+    },
+    "sim_swap_takeover:layering": {
+      "median_min": 74.65,
+      "n": 6,
+      "sigma": 0.3
+    },
+    "sim_swap_takeover:otp": {
+      "median_min": 12.95,
+      "n": 6,
+      "sigma": 0.3
+    },
+    "sim_swap_takeover:sim_change": {
+      "median_min": 12.12,
+      "n": 6,
+      "sigma": 0.3
+    },
+    "sim_swap_takeover:unauthorized_debit": {
+      "median_min": 15.88,
+      "n": 6,
+      "sigma": 0.3
+    },
+    "upi_investment_fraud:contact": {
+      "median_min": 1496.12,
+      "n": 6,
+      "sigma": 0.3
+    },
+    "upi_investment_fraud:layering": {
+      "median_min": 84.85,
+      "n": 6,
+      "sigma": 0.3
+    },
+    "upi_investment_fraud:lure": {
+      "median_min": 4515.88,
+      "n": 6,
+      "sigma": 0.325
+    },
+    "upi_investment_fraud:payment": {
+      "median_min": 45.75,
+      "n": 6,
+      "sigma": 0.316
+    }
+  },
+  "validation": {
+    "hmm": {
+      "brier_60": 0.1327,
+      "cases": 18,
+      "mae_min": 9.5
+    },
+    "hsmm": {
+      "brier_60": 0.1327,
+      "cases": 18,
+      "mae_min": 9.5
+    }
+  }
+}

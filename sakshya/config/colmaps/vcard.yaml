@@ -1,0 +1,7 @@
+source: vcard
+label: Contacts (vCard)
+family: mobile
+dependence: device
+reference: false
+sigma_s: 60
+columns: {}

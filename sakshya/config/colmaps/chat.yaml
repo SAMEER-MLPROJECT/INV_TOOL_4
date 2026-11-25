@@ -1,0 +1,9 @@
+source: chat
+label: WhatsApp chat export
+family: social
+dependence: device
+reference: false
+timezone: "+05:30"
+time_format: "%d/%m/%y, %I:%M %p"
+sigma_s: 90
+columns: {}

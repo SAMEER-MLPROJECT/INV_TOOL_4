@@ -1,0 +1,11 @@
+source: video
+label: CCTV or DVR video
+observes_as: cctv_log
+family: cctv
+dependence: dvr
+reference: false
+sigma_s: 2
+binary: true
+scene_threshold: 0.12
+max_frames: 500
+columns: {}

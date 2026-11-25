@@ -1,0 +1,6 @@
+source: media
+label: Media file
+family: cctv
+dependence: dvr
+reference: false
+columns: {}

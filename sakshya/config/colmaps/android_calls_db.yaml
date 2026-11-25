@@ -1,0 +1,20 @@
+source: android_calls_db
+label: Android call log database (calllog.db)
+observes_as: call_log
+family: mobile
+dependence: device
+clock_domain: export
+reference: false
+sigma_s: 5
+binary: true
+kind: call
+time_unit: unix_ms
+outgoing_values: ["2"]
+query: "SELECT _id AS rowid, number, date, duration, type FROM calls ORDER BY date"
+fields:
+  rowid: rowid
+  time: date
+  party: number
+  direction: type
+  duration: duration
+columns: {}

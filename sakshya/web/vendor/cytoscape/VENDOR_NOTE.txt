@@ -1,0 +1,1 @@
+Cytoscape.js 3.30.4, unmodified. The container rule it would inject at runtime is provided by css/app.css so that the page works under a strict Content Security Policy.

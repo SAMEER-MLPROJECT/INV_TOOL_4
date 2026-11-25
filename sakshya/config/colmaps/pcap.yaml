@@ -1,0 +1,9 @@
+source: pcap
+label: Network packet capture (PCAP or PCAPNG)
+observes_as: net_conn
+family: network
+dependence: network_sensor
+reference: false
+sigma_s: 1
+binary: true
+columns: {}

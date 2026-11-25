@@ -1,0 +1,38 @@
+id: CASE-2611-0163
+title: Furniture delivery dispute
+seed:
+  kind: complaint
+  identifiers:
+  - type: phone
+    value: '+917573941000'
+  - type: account
+    value: CUBK0362619:3249400576705
+evidence:
+- file: evidence/victim_phone/call_log.csv
+  source: call_log
+  owner: '+917573941000'
+  sha256: a41be252cb3fb74317178c876ca3bc4858b29f65945d5d0b2ab23178b2cb4bbd
+- file: evidence/victim_phone/sms.csv
+  source: sms
+  owner: '+917573941000'
+  sha256: b766d8226fd260e392789bc6bc16ac15cedea7d5ade6089bd6a868ae5939081d
+- file: evidence/bank/kyc_accounts.csv
+  source: kyc_account
+  sha256: 759a4767c085cf33b4730d220430b64c4b623ceb95848da4d76aea4384ee20f1
+- file: evidence/complaint.txt
+  source: complaint
+- file: evidence/bank/statement_576705.csv
+  source: bank_statement
+  account: CUBK0362619:3249400576705
+  sha256: 6a508ed7dd1353cce6e50e7db94b76055d0644ff6b2ef7869e264a4e0f9205dd
+- file: evidence/bank/statement_812261.csv
+  source: bank_statement
+  account: NCBK0343040:5799362812261
+  sha256: 68b3ba86409eb4d157ceebec832d7d8f3a8bd2dc4f45993d5da1d434f57053d7
+- file: evidence/victim_phone/whatsapp_chat_8224466798.txt
+  source: chat
+  owner: '+917573941000'
+  owner_name: Neha
+  other: '+918224466798'
+  sha256: 172f2d95e08878f43956d1a7a70d9c1f611a3b8391d4c39ea6e3e5371db5ec1b
+complaint_time: '2026-10-02 10:10:00'

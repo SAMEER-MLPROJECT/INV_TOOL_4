@@ -1,0 +1,11 @@
+source: tower_list
+label: Cell site list
+family: telecom
+dependence: operator_sites
+reference: false
+columns:
+  cell: cell_id
+  lat: lat
+  lon: lon
+  radius: radius_m
+  address: address

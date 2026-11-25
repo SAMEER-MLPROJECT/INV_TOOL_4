@@ -1,0 +1,18 @@
+source: social_csv
+label: Social media messages (CSV)
+observes_as: chat
+family: social
+dependence: device
+clock_domain: export
+reference: false
+timezone: "+05:30"
+time_format: "%Y-%m-%d %H:%M:%S"
+sigma_s: 30
+optional: [recipient, thread, message_id]
+columns:
+  time: timestamp
+  sender: sender
+  recipient: recipient
+  text: message
+  thread: thread
+  message_id: message_id

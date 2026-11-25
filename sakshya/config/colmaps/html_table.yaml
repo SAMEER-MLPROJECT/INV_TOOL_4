@@ -1,0 +1,18 @@
+source: html_table
+label: Messages exported as an HTML table
+observes_as: chat
+family: social
+dependence: device
+clock_domain: export
+reference: false
+timezone: "+05:30"
+time_format: "%Y-%m-%d %H:%M:%S"
+sigma_s: 30
+kind: chat
+party_kind: handle
+table: 0
+columns:
+  time: Time
+  sender: From
+  recipient: To
+  text: Message

@@ -1,0 +1,67 @@
+id: CASE-2611-0158
+title: SIM swap and unauthorised bank debits
+seed:
+  kind: complaint
+  identifiers:
+  - type: phone
+    value: '+918414126576'
+  - type: account
+    value: IVBK0988940:1955043984369
+evidence:
+- file: evidence/telecom/cdr_918414126576.csv
+  source: cdr
+  sha256: 27090d4b52dd2164eca6141260b01c0db5a2c6bbfb077f8c79185dbee728c5bd
+- file: evidence/telecom/cdr_919116681927.csv
+  source: cdr
+  sha256: 7813ecf9302634c507f073136031c414338925bcbe1f34b8157ae968dd7603f5
+- file: evidence/victim_phone/call_log.csv
+  source: call_log
+  owner: '+918414126576'
+  sha256: b0760013dc8fc7086aa1128dafcbff198d9bc993dfca9b889de1e0268ebf3103
+- file: evidence/victim_phone/sms.csv
+  source: sms
+  owner: '+918414126576'
+  sha256: b766d8226fd260e392789bc6bc16ac15cedea7d5ade6089bd6a868ae5939081d
+- file: evidence/cctv/ATM-IVBK-JMT-01_dvr_log.csv
+  source: cctv_log
+  atm_id: ATM-IVBK-JMT-01
+  sha256: 0486b2949a7b4e2652153928c9950ba80cbb859ef2b5c34efa890ba68785f2bb
+- file: evidence/bank/atm_journal_ATM-IVBK-JMT-01.csv
+  source: atm_journal
+  sha256: 751c598ce5682ffe2e28e8e838b2239b3c3e79b997cb6eec16cc67e976c2610f
+- file: evidence/cctv/frames/ATM-IVBK-JMT-01_001.png
+  source: media
+  sha256: 84e4d0323f6137cd9f94f6f7595bcea1d55d61244ee71cb9ecdd79fc02475b08
+- file: evidence/cctv/frames/ATM-IVBK-JMT-01_002.png
+  source: media
+  sha256: 4c8352334dd40e70639d8e046b5c0e5406a16a5bd597af6689c68de8ea0b253a
+- file: evidence/cctv/frames/ATM-IVBK-JMT-01_003.png
+  source: media
+  sha256: 2c6cce593ee992c0acc8deba35994c42149d386f739ac6a3e49d9d0a5869848d
+- file: evidence/telecom/tower_dump_ATM-IVBK-JMT-01.csv
+  source: tower_dump
+  sha256: ecbded21a1c21beb41d2286ddfdf47da21efad8658f8d62f55d7ec378e9a6ee7
+- file: evidence/telecom/kyc_subscribers.csv
+  source: kyc_subscriber
+  sha256: 468aae413d3f0718d633093e13d21de427172f49dc5a1953f635fb8deab5d14b
+- file: evidence/bank/kyc_accounts.csv
+  source: kyc_account
+  sha256: b15f57c262b8af9b5d46f9b3f9ec8c12a588c0eed706909adf748ea5c84ec661
+- file: evidence/complaint.txt
+  source: complaint
+- file: evidence/bank/statement_984369.csv
+  source: bank_statement
+  account: IVBK0988940:1955043984369
+  sha256: ebdcfa8b924b3c2b2f5a56fadfee906de755d933878f6f5a176831d81f49b32a
+- file: evidence/bank/statement_088828.csv
+  source: bank_statement
+  account: NCBK0524008:8812036088828
+  sha256: 8c60e4c4df8e9fc8f5a78a2ea2aedc50f31350be6215209eeb7f8ebb5544ba6b
+- file: evidence/bank/statement_855100.csv
+  source: bank_statement
+  account: IVBK0409198:8042815855100
+  sha256: f451838c6cde3544e5fae8ccc3a9925f1bdd481eebde67a071557fafd474cd10
+- file: evidence/telecom/tower_list.csv
+  source: tower_list
+  sha256: 3b1da94af09ae0c5253238aeff877b5d316783d7e5d915d343bf69be2a4a87e9
+complaint_time: '2026-09-29 17:10:00'

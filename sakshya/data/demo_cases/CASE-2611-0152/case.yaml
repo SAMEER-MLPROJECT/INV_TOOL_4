@@ -1,0 +1,67 @@
+id: CASE-2611-0152
+title: Video call sextortion with UPI payments
+seed:
+  kind: complaint
+  identifiers:
+  - type: phone
+    value: '+916537620450'
+  - type: account
+    value: CUBK0437905:8937441167515
+evidence:
+- file: evidence/telecom/cdr_916676285638.csv
+  source: cdr
+  sha256: d6c9615b0693dc7cb1eb74f163bddc7a230e740c2f0840624bb419023b0d5456
+- file: evidence/telecom/cdr_919549765123.csv
+  source: cdr
+  sha256: e15adc7a7274a36e4df2d2656daacaf4b55af63cfd9f5421647fc1b9991412e0
+- file: evidence/victim_phone/call_log.csv
+  source: call_log
+  owner: '+916537620450'
+  sha256: ce88a05978e42d7f8d22eb71a655679ecbf878afac8867c8bd8b9283c07ab1df
+- file: evidence/victim_phone/sms.csv
+  source: sms
+  owner: '+916537620450'
+  sha256: 0b7b203f5e618ae75a3eb8fe2a701da5f5d49449e8fc1df5f10ddbc2882ad6f0
+- file: evidence/cctv/ATM-CUBK-JMT-01_dvr_log.csv
+  source: cctv_log
+  atm_id: ATM-CUBK-JMT-01
+  sha256: d2d8c5510e888e8db645bdef3f46e058db47833dbce55272498e04f9d8793474
+- file: evidence/bank/atm_journal_ATM-CUBK-JMT-01.csv
+  source: atm_journal
+  sha256: b46346b6224e8c6eaa8d7dd1a9a69872e5b8a5895fb117b2b23d99dd6325f2a2
+- file: evidence/cctv/frames/ATM-CUBK-JMT-01_001.png
+  source: media
+  sha256: 84e4d0323f6137cd9f94f6f7595bcea1d55d61244ee71cb9ecdd79fc02475b08
+- file: evidence/telecom/tower_dump_ATM-CUBK-JMT-01.csv
+  source: tower_dump
+  sha256: 693859b5cb3bd9abe9e9441adf43b4868b25649e5ab8958366ebfa36359e3f1d
+- file: evidence/telecom/kyc_subscribers.csv
+  source: kyc_subscriber
+  sha256: c40aa56759458cb67eff9abaf9fe0cc862209ae82cdee12bead6f3a45093949a
+- file: evidence/bank/kyc_accounts.csv
+  source: kyc_account
+  sha256: f5cd5150944ff6d553ed59e76d1363534d89bb55a19da4359ea7a8673057c51b
+- file: evidence/complaint.txt
+  source: complaint
+- file: evidence/bank/statement_167515.csv
+  source: bank_statement
+  account: CUBK0437905:8937441167515
+  sha256: 815a984349b05f01fbae7bab8c4814137efe84039e4365bc27ff8fe577e12a1d
+- file: evidence/bank/statement_131893.csv
+  source: bank_statement
+  account: IVBK0289189:3280697131893
+  sha256: f6d2080d3e7b877274744a37e4d629c4b995bfbf3f2d0401fcaea5cc26724267
+- file: evidence/bank/statement_312230.csv
+  source: bank_statement
+  account: CUBK0403397:3123164312230
+  sha256: ea52bca292dd02eafab7b662161a984cf17ff2a7f5503250d5003e3066fbf50f
+- file: evidence/victim_phone/whatsapp_chat_6676285638.txt
+  source: chat
+  owner: '+916537620450'
+  owner_name: Rekha
+  other: '+916676285638'
+  sha256: 3bbee004baccdc1fa8644af0bf4de7a3617f378b9ff1b763bc3a67966a3089ee
+- file: evidence/telecom/tower_list.csv
+  source: tower_list
+  sha256: e3b94ba60f64d82dbf4fd38a6bb2df0e400f070b92727b2463def7c081e51a96
+complaint_time: '2026-09-08 11:32:00'

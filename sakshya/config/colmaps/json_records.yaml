@@ -1,0 +1,11 @@
+source: json_records
+label: Records in a JSON file (configurable)
+family: records
+dependence: records
+reference: false
+sigma_s: 60
+kind: record
+time_unit: text
+records: ""
+fields: {}
+columns: {}

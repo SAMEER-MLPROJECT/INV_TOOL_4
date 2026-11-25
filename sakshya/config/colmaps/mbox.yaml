@@ -1,0 +1,8 @@
+source: mbox
+label: Mailbox (mbox)
+observes_as: email
+family: email
+dependence: mail_message
+reference: false
+sigma_s: 120
+columns: {}
